@@ -2,27 +2,38 @@
 
 Welcome to Document, a Gatsby.js theme by [Code Bushi](https://codebushi.com/gatsby-starters-and-themes/). Quickly and easily create documentation for anything using MDX or Markdown.
 
-👀 [View the Live Demo](https://gatsby-theme-document.netlify.com/)
+👀 [View the Site](https://willow-creek-documentation.netlify.com/)
 
 ## Getting Started
 
-Using the Gatsby CLI
-
 ```bash
-gatsby new document-site https://github.com/codebushi/gatsby-theme-document-example
-cd document-site
-gatsby develop
+git clone https://github.com/redolivedev/willow-creek-documentation
+cd willow-creek-documentation
+npm install
+npm start
 ```
 
-Your new site will be up at http://localhost:8000
-
-Try changing the logo by editing the file at `src/gatsby-theme-document/logo.mdx`.
-
 ## Adding Content
+
+Head to the [site admin](https://willow-creek-documentation.netlify.com/admin) and write content there.
+
+### Manually Adding Content
 
 Document is built with [MDX](https://mdxjs.com/). Content can be added by creating or editing the MDX files in the content folder `content/index.mdx`.
 
 With MDX, you can add JSX or even React components to your markdown files. Images can also be added to any `.mdx` file, and will be automatically optimized using [gatsby-remark-images](https://www.gatsbyjs.org/packages/gatsby-remark-images/).
+
+### Subpages
+
+```bash
+root
+└── content
+  ├── index.mdx #homepage "/"
+  ├── codeblock.mdx #codeblock "/codeblock"
+  └── codeblock
+    └── subpage.mdx #subpage under codeblock "/codeblock/subpage"
+    └── subpage-2.mdx #subpage under codeblock "/codeblock/subpage-2"
+```
 
 ### Left Sidebar
 

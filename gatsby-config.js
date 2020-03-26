@@ -1,17 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Document by Code Bushi`,
-    name: `Code Bushi`,
-    siteUrl: `https://gatsby-theme-document.netlify.com`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: `Willow Creek Documentation`,
+    name: `Red Olive`,
+    siteUrl: `https://willow-creek-documentation.netlify.com`,
+    description: `Willow Creek Documentation`,
     social: [
       {
         name: `github`,
-        url: `https://github.com/codebushi/gatsby-theme-document`,
+        url: `https://github.com/redolivedev/willow-creek-documentation`,
       },
       {
         name: `twitter`,
-        url: `https://twitter.com/HuntaroSan`,
+        url: `https://twitter.com/redolivedesign`,
       },
     ],
     sidebarConfig: {
@@ -20,7 +20,11 @@ module.exports = {
     },
   },
   plugins: [
-    { resolve: `gatsby-theme-document` },
+    {
+      resolve: `gatsby-theme-document`,
+    },
+    { resolve: `gatsby-plugin-netlify` },
+    { resolve: `gatsby-plugin-netlify-cms-paths` },
     { resolve: `gatsby-plugin-netlify-cms` },
   ],
 };
