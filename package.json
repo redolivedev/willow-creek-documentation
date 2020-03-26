@@ -1,16 +1,19 @@
 {
-  "name": "gatsby-theme-document-example",
+  "name": "willow-creek-documentation",
   "author": "Code Bushi",
   "repository": "https://github.com/codebushi/gatsby-theme-document-example",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
+    "start": "npm run develop",
     "develop": "gatsby develop",
     "build": "gatsby build"
   },
   "dependencies": {
     "gatsby": "^2.15.9",
+    "gatsby-plugin-netlify-cms": "^4.2.1",
     "gatsby-theme-document": "1.0.8",
+    "netlify-cms-app": "^2.11.32",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   }
